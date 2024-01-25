@@ -1,0 +1,41 @@
+     A                                      REF(CSCSTP)
+     A          R HEADINGS                  SKIPB(1)
+     A                                     2DATE(*JOB *YY)
+     A                                      EDTCDE(Y)
+     A                                    19'Fun With Characters'
+     A                                    44'Page'
+     A                                    49PAGNBR
+     A                                      EDTCDE(Z)
+     A          R DETAIL                    SPACEA(1)
+     A                                     5'Customer:'
+     A                                      SPACEB(1)
+     A            CUSTNO    R             19
+     A                                     5'User ID:'
+     A                                      SPACEB(1)
+     A            USERID        33        19
+     A                                     5'Password:'
+     A                                      SPACEB(1)
+     A            PASSWORD       9        19
+     A                                     5'Name:'
+     A                                      SPACEB(1)
+     A            NAME          26        19
+     A                                     5'Zip:'
+     A                                      SPACEB(1)
+     A            FINZIP        10        19
+     A                                     5'Phone:'
+     A                                      SPACEB(1)
+     A            FRMTPH        14        19
+     A                                     5'Year:'
+     A                                      SPACEB(1)
+     A            YEAROUT        4        19
+     A                                     5'Balance:'
+     A                                      SPACEB(1)
+     A            BALANCE        9        19
+
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="FunWC">
+     A*%%RS+  <device type="printer" width="132" height="66" />
+     A*%%RS+  <record-write record-format="HEADINGS" />
+     A*%%RS+  <record-write record-format="DETAIL" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>   

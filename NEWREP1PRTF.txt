@@ -1,0 +1,33 @@
+     A          R HEADINGS
+     A                                      SKIPB(1)
+     A                                     3DATE
+     A                                      EDTCDE(Y)
+     A                                    36'Acme Employee Hourly Work Report '
+     A                                    90PAGNBR
+     A                                     2'Social Security Number'
+     A                                      SPACEB(2)
+     A                                    26'Employee Name'
+     A                                    45'Work Date'
+     A                                    58'Work Hours'
+     A          R DETAIL                    SPACEA(1)
+     A                                    72'Pay    '
+     A            SOCSEC    R              2
+     A                                      REFFLD(ACMEREC/SOCSEC RPGIV_5THS/AC-
+     A                                      P001)
+                                            EDTWRD('   -  -    ')
+     A                                      SPACEB(2)
+     A            NAME      R             26REFFLD(ACMEREC/NAME RPGIV_5THS/ACP0-
+     A                                      01)
+     A            WKDATE    R             45REFFLD(ACMEREC/WKDATE RPGIV_5THS/AC-
+     A                                      P001)
+     A            WKHOURS   R             58REFFLD(ACMEREC/WKHOURS RPGIV_5THS/A-
+     A                                      CP001)
+     A            PAY            6  2     72EDTCDE(J $)
+
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="Hours Worked">
+     A*%%RS+  <device type="printer" width="132" height="66" />
+     A*%%RS+  <record-write record-format="HEADINGS" />
+     A*%%RS+  <record-write record-format="DETAIL" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>               

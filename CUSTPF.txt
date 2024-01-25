@@ -1,0 +1,12 @@
+     A                                      UNIQUE
+     A          R CUSTPFR
+     A            CUSTNO         5S 0       COLHDG('CUSTOMER NUMBER')
+     A            LNAME         20A         COLHDG('LAST NAME')
+     A                                      CHECK(ME)
+     A            FNAME         15A         COLHDG('FIRST NAME')
+     A            STREET        30A         COLHDG('STREET ADDRESS')
+     A            ZIP            5S 0       RANGE(49440 49449)
+     A            PHONE         10P 0       EDTWRD('0   &   -    ')
+     A            PREFERRED      1A         VALUES('N' 'Y')
+     A            SALESREP       3S 0       COLHDG('SALES REP')
+     A          K CUSTNO                   

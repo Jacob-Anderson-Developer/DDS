@@ -1,0 +1,10 @@
+     A          R STUPFR
+     A            SOCSEC         9S 0
+     A            FNAME         15A
+                  ACTBAL         7S 2
+     A            LNAME         20A
+     A            GENDER         1A         DFT('M')
+     A            PHONE         10S 0
+     A            ADDR1         25A
+     A            ADDR2         25A
+     A            ZIP            9S 0                                 

@@ -1,0 +1,19 @@
+     A          R HEADING
+     A                                  1126DATE
+     A                                  1  2'User ID:'
+     A                                  1 44'CloudServices24x7, Inc.'
+     A            FIELD           L     1 93
+     A                                  2 43'Product Supplier Inquiry'
+     A                                  6 17'Product Number  . . . .'
+     A                                  9 17'Type value, then Press Enter.'
+     A                                 13  1'F3 = Exit'
+     A          R DETAIL
+     A                                 14 43'CloudServices24x7, Inc.'
+
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="SUPINFO">
+     A*%%RS+  <device type="printer" width="132" height="66" />
+     A*%%RS+  <record-write record-format="HEADING" />
+     A*%%RS+  <record-write record-format="DETAIL" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>                                                                                          

@@ -1,0 +1,10 @@
+     A                                      UNIQUE
+     A          R EMPPAYR
+     A            EMPNO          5S 0       COLHDG('EMPLOYEE NUMBER')
+     A            SOCSEC         9S 0       COLHDG('SOCIAL SECURITY #')
+     A            LAST          20A         COLHDG('LAST NAME')
+     A            FIRST         12A         COLHDG('FIRST NAME')
+     A            OFFICENO       2S 0       RANGE(1 50)
+     A            ANNSALARY      7P 0       COLHDG('ANNUAL SALARY')
+     A            TERRITORY      2S 0       CHECK(ME)
+     A          K EMPNO                                                    

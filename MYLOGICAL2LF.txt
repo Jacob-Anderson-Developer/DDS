@@ -1,0 +1,11 @@
+                R MYPROJECTR                PFILE(MPROJECT)
+                  CUSTNO
+                  GALSLOADED                RANGE(13000 13400)
+                  GALSDELIV
+                  HOURSWRKD
+                  MILESDRVN
+                  FUELUSED
+                  DEFUSED
+                  MILESPRGAL
+                  DATE            L
+                K MILESDRVN                                            

@@ -1,0 +1,3 @@
+     A          R INSTREC                   PFILE(WUINSTP)
+     A          K ILNAME
+     A          K IFNAME                                                                                          

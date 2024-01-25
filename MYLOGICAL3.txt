@@ -1,0 +1,5 @@
+                R MYPROJECTR                PFILE(MPROJECT)
+                  CUSTNO
+                  GALSDELIV
+                  DATE            L
+                K CUSTNO                                              

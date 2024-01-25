@@ -1,0 +1,29 @@
+
+     A                                      REF(GTCPAYP)
+                                            INDARA
+     A          R HEADINGS                  SKIPB(1)
+     A                                     2DATE(*JOB *YY)
+     A                                      EDTCDE(Y)
+     A                                    53'Playing with Monitor'
+     A                                   114'Page'
+     A                                   119PAGNBR
+                                            EDTCDE(Z)
+     A          R ERROR                     SPACEA(1)
+     A                                      SPACEB(1)
+     A            MSG           43        72SPACEA(2)
+     A                                      SPACEB(1)
+     A            MSG1          43        72
+     A                                      SPACEA(1)
+     A                                      SPACEB(1)
+     A            MSG2          43        72SPACEB(2)
+     A                                      SPACEA(1)
+     A            MSG3          43        72SPACEB(1)
+     A                                      SPACEA(1)
+
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="S2PRJ2">
+     A*%%RS+  <device type="printer" width="132" height="66" />
+     A*%%RS+  <record-write record-format="HEADINGS" />
+     A*%%RS+  <record-write record-format="ERROR" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>                                           

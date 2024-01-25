@@ -1,0 +1,45 @@
+     A          R HEADINGS                  SKIPB(1)
+     A                                     2DATE(*JOB *YY)
+     A                                      EDTCDE(Y)
+     A                                   113'Page'
+     A                                   119PAGNBR
+     A                                    43'Wibaux University Payroll Register'
+     A                                      SPACEB(1)
+     A                                     4'Social'
+     A                                      SPACEB(2)
+     A                                    21'Employee'
+     A                                    44'Gross'
+     A                                    60'Federal'
+     A                                    76'State'
+     A                                    89'FICA'
+     A                                   105'Net'
+     A                                    15'Initial'
+     A                                      SPACEB(1)
+     A                                    24'Last Name'
+     A                                    44'Pay'
+     A                                    62'Tax '
+     A                                    77'Tax'
+     A                                   105'Pay'
+     A          R DETAIL                    SPACEA(1)
+     A            EMPNO     R   12         1SPACEB(2)
+     A                                      REFFLD(EMPREC/EMPNO RPGIV_5THS/WUHR-
+     A                                      LYP)
+     A            FNAME     R    1        15REFFLD(EMPREC/FNAME RPGIV_5THS/WUHR-
+     A                                      LYP)
+     A            LNAME     R   15        24REFFLD(EMPREC/LNAME RPGIV_5THS/WUHR-
+     A                                      LYP)
+     A            GROPAY         4  2     44
+     A            FEDTAX         3  2     59
+     A            STATAX         3  2     75
+     A            FICA           3  2     89
+     A            NETPAY         4  2    103
+     A          R TOTALS                    SPACEA(1)
+
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="WUPayRoll">
+     A*%%RS+  <device type="printer" width="132" height="66" />
+     A*%%RS+  <record-write record-format="HEADINGS" />
+     A*%%RS+  <record-write record-format="DETAIL" />
+     A*%%RS+  <record-write record-format="TOTALS" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>                                                 

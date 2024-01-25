@@ -1,0 +1,43 @@
+     A                                      INDARA
+     A                                      PRINT
+     A                                      CA03(03 'F3=Exit')
+     A          R SCRN1
+     A                                 13 18'Type value, then Press Enter.'
+     A                                 10 18'Student number  . . . .'
+     A            STUNO          9Y 0B 10 44EDTCDE(Z)
+     A  90
+     AO 90                                  DSPATR(PC)
+     A  90                                  ERRMSG('Invalid Student Number' 90)
+     A                                 20  3'F3=Exit'
+     A                                  1 69DATE(*JOB)
+     A                                      EDTWRD('  /  /  ')
+     A                                  1  4'Student Pass/Fail Calc by Jacob An-
+     A                                      derson'
+     A          R SCRN2
+     A                                  4 12'Student Name . . . .'
+     A            FULLNAME      26   O  4 33
+     A                                  8 11'Please enter the following:'
+     A                                 10 21'Homework Description . . . .'
+     A                                 13 21'Points Received. . . . . . .'
+     A                                 16 21'Points Possible. . . . . . .'
+     A            ASSIGNDESC    20   B 10 50
+     A            PTSRECEIVE     3N 0B 13 50
+     A            PTSPOSSIBL     3N 0B 16 50
+     A  95                                  DSPATR(PC)
+     A  95                                  ERRMSG('Invalid Points' 95)
+     A                                 20  3'F3=Exit'
+                R SCRN3
+     A                                  4 12'Student Name . . . .'
+     A            FULLNAME      26   O  4 33
+     A            MSGP          14   O 11 31
+     A                                 20  3'Press Enter to Continue.'
+     A                                  9 31'Grade:'
+     A            GRADPERC       3N 0O  9 38
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="Untitled">
+     A*%%RS+  <device type="display" width="80" height="24" />
+     A*%%RS+  <record-write record-format="SCRN1" />
+     A*%%RS+  <record-write record-format="SCRN2" />
+     A*%%RS+  <record-write record-format="SCRN3" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>         

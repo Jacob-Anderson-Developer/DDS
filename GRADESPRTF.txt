@@ -1,0 +1,27 @@
+     A* RETIREMENT REPORT - REFERENCES INSTRUCTLF LOGICAL FILE
+     A                                      REF(GRADEBOOK)
+     A          R HEADINGS
+                                            SKIPB(2)
+     A                                     4DATE(*JOB *YY)
+     A                                      EDTCDE(Y)
+     A                                    25'Wexler University Student Scores'
+     A                                    70'Page:'
+     A                                    76PAGNBR
+     A                                      EDTCDE(1)
+     A                                     2'Student Number'
+     A                                      SPACEB(3)
+     A                                    21'Student Name'
+     A                                    58'Grade Average'
+     A                                    78'Letter Grade'
+     A          R DETAIL
+     A            STUNO          9  0      3SPACEB(2)
+     A            FULLNAME      15        21
+     A            AVERAGE        3  0     58
+                  LETGRD         2        82
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="Wexler U Student Scores">
+     A*%%RS+  <device type="printer" width="132" height="66" />
+     A*%%RS+  <record-write record-format="HEADINGS" />
+     A*%%RS+  <record-write record-format="DETAIL" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>                                     

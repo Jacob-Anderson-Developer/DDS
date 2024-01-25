@@ -1,0 +1,11 @@
+     A          R MYPROJECTR                PFILE(MPROJECT)
+     A            CUSTNO
+     A            GALSLOADED
+     A            GALSDELIV
+     A            HOURSWRKD
+     A            MILESDRVN
+     A            FUELUSED
+     A            DEFUSED
+     A            MILESPRGAL
+     A            DATE            L
+     A          K MILESDRVN                    

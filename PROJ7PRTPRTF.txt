@@ -1,0 +1,23 @@
+     A          R HEADING
+     A                                  3 52'Generated Customer Report'
+     A                                  2 58'Cloud Services'
+     A                                  6  3'Customer Name'
+     A                                  6 31'Customer ID'
+     A                                  6 72'Password'
+     A                                  6 99'Email Reminder'
+     A                                  5 87'Last 4'
+     A                                  6 86'of phone'
+     A          R DETAIL                    SPACEB(2)
+     A            CUSTID        37        31
+     A            CUSTNAME      26         3
+     A            PASS           9        72
+     A            FOURDIG        4        88
+     A            REMDATE         L      100DATFMT(*USA)
+
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="CSCSTP CUSTOMER REPORT">
+     A*%%RS+  <device type="printer" width="132" height="66" />
+     A*%%RS+  <record-write record-format="HEADING" />
+     A*%%RS+  <record-write record-format="DETAIL" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>                                             

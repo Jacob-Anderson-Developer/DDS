@@ -1,0 +1,48 @@
+     A                                      REF(MYORDPRP)
+     A  88                                  SFLEND(*MORE)
+     A                                      INDARA
+     A                                      CA03(03 'F3=Exit')
+     A                                      VLDCMDKEY(25)
+     A          R SCRN1
+     A                                  1 28'Compusell Order Tracker'
+     A                                 12 11'Type values, then Press Enter.'
+     A                                 19  2'F3=Exit'
+     A                                  1 60DATE(*JOB)
+     A                                      EDTWRD('  /  /  ')
+     A                                  2 29'Jacob Anderson'
+     A                                  6 11'Action Code . . . . . . . . . .'
+     A            ACTION         1   I  6 43VALUES('SH' 'BO')
+     A  43                                  ERRMSG('Invalid Action')
+     A                                  8 18'SH = Shipped Order'
+     A                                  9 18'BO = Back Order'
+     A          R SCRN2
+     A                                      CA12(12 'F12=Cancel')
+     A  42                                  CA10(10 'F10=Delete')
+     A                                  1 29'Compusell Order Report'
+     A                                  1 63DATE(*JOB)
+     A                                      EDTWRD('  /  /  ')
+     A                                 23  3'F3 = Exit, F12 = Cancel'
+     A                                  3  4'Order'
+     A                                  3 16'Product'
+     A                                  3 29'Quantity'
+     A                                  3 44'Quantity'
+     A                                  3 63'Tracking'
+     A                                  4  5'No.'
+     A                                  4 18'No.'
+     A                                  4 29'Ordered'
+     A                                  4 44'On Hold'
+     A                                  4 64'Number'
+     A            ORD#           5N 0O  6  4
+     A            PRODNO         6N 0O  6 16
+     A            QTYORD         4N 0B  6 30CHECK(RB)
+     A            QTYHOLD        4   B  6 45CHECK(RB)
+     A            STS            2   B  6 66
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="SCRN1">
+     A*%%RS+  <device type="display" width="80" height="24" />
+     A*%%RS+  <record-write record-format="SCRN1" />
+     A*%%RS+ </sequence>
+     A*%%RS+ <sequence name="SCRN2">
+     A*%%RS+  <device type="display" width="80" height="24" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>                         

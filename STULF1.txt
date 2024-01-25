@@ -1,0 +1,4 @@
+
+     A          R STUPFR                    PFILE(STUPF)
+     A          K LNAME
+     A          K FNAME                                          

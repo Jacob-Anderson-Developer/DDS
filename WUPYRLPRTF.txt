@@ -1,0 +1,55 @@
+     A                                      REF(WUHRLYP)
+     A          R HEADINGS                  SKIPB(1)
+     A                                     2DATE(*JOB *YY)
+     A                                      EDTCDE(Y)
+     A                                   114'Page'
+     A                                   119PAGNBR
+                                            EDTCDE(Z)
+     A                                    43'Wibaux University Payroll Register'
+     A                                      SPACEB(1)
+     A                                     4'Social'
+     A                                      SPACEB(2)
+     A                                    21'Employee'
+     A                                    44'Gross'
+     A                                    60'Federal'
+     A                                    76'State'
+     A                                    89'FICA'
+     A                                   105'Net'
+     A                                    15'Initial'
+     A                                      SPACEB(1)
+     A                                    24'Last Name'
+     A                                    44'Pay'
+     A                                    62'Tax '
+     A                                    77'Tax'
+     A                                   105'Pay'
+     A          R DETAIL                    SPACEA(1)
+     A            SOCSEC1        3  0      1SPACEB(2)
+     A                                     4'-'
+     A            SOCSEC2        2  0      5
+     A                                     7'-'
+     A            SOCSEC3        4  0      8
+
+     A            INIT           1        15
+     A            LNAME     R             24
+     A            GROPAY         6S 2     44EDTCDE(A)
+     A            FEDTAX         5S 2     59EDTCDE(A)
+     A            STATAX         5S 2     75EDTCDE(A)
+     A            FICA           5S 2     89EDTCDE(A)
+     A            NETPAY         6S 2    105EDTCDE(A)
+     A          R TOTALS                    SPACEA(1)
+     A                                    24'Grand Totals'
+     A                                      SPACEB(1)
+     A            GROTOT         7  2     42EDTCDE(A $)
+     A            FEDTOT         6  2     56EDTCDE(A $)
+     A            STATOT         5  2     74EDTCDE(A $)
+     A            FICATOT        5  2     88EDTCDE(A $)
+     A            NETTOT         6  2    104EDTCDE(A $)
+
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="WUPayRoll">
+     A*%%RS+  <device type="printer" width="132" height="66" />
+     A*%%RS+  <record-write record-format="HEADINGS" />
+     A*%%RS+  <record-write record-format="DETAIL" />
+     A*%%RS+  <record-write record-format="TOTALS" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>                                       

@@ -1,0 +1,22 @@
+     A                                      UNIQUE
+     A          R MYPROJECTR
+     A            CUSTNO         4S 0       COLHDG('CUSTOMER NUMBER')
+     A                                      EDTWRD('0   ')
+     A                                      RANGE(0000 3999)
+     A                                      CHECK(ME)
+     A            GALSLOADED     5S 0       COLHDG('GALLONS LOADED')
+     A                                      CHECK(ME)
+     A            GALSDELIV      5S 0       COLHDG('GALLONS DELIVERED')
+     A                                      CHECK(ME)
+     A            HOURSWRKD      4P 2       COLHDG('HOURS WORKED')
+     A                                      CHECK(ME)
+     A            MILESDRVN      3S 0       COLHDG('MILES DRIVEN')
+     A                                      CHECK(ME)
+     A            FUELUSED       3S 0       COLHDG('FUEL USED')
+     A                                      CHECK(ME)
+     A            DEFUSED        2S 0       COLHDG('DEF USED')
+     A                                      CHECK(ME)
+     A            MILESPRGAL     1S 0       COLHDG('MILES PER GALLON')
+     A                                      CHECK(ME)
+     A            DATE            L
+     A          K DATE                             

@@ -1,0 +1,25 @@
+     A* GTC CUSTOMER ACCOUNTS EXTERNAL PRINTER DEFINITION
+     A                                      REF(GTCSTP)
+     A          R HEADINGS
+     A                                     1DATE(*JOB)
+                                            SPACEB(0)
+     A                                      EDTWRD('  /  /  ')
+     A                                    20'GTC CUSTOMER ACCOUNTS'
+     A                                    52'Page'
+     A                                    57PAGNBR
+     A                                      SPACEA(2)
+     A                                     3'CUSTOMER'
+                                          16'CUSTOMER LAST'
+                                          35'CURRENT BILL'
+                                          53'AMOUNT'
+                                            SPACEA(1)
+                                           4'PHONE'
+                                          20'NAME'
+                                          38'AMOUNT'
+                                          54'OWED'
+                                            SPACEA(2)
+     A          R DETAIL                    SPACEA(1)
+     A            CPHONE    R              3
+     A            CLNAME    R             16
+     A            CURBIL    R             35EDTCDE(J $)
+     A            AMTOWE    R             53EDTCDE(J $)       

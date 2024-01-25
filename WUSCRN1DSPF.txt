@@ -1,0 +1,79 @@
+     A                                      REF(MYINSTP)
+     A                                      INDARA
+     A                                      CA03(03 'F3=Exit')
+     A                                      VLDCMDKEY(25)
+     A          R SCRN1
+     A                                  1 28'Wibaux University'
+     A                                 12 11'Type values, then Press Enter.'
+     A                                  5 11'Social Security Number  . . . .'
+     A            INSTNO         9Y 0B  5 43EDTCDE(Z)
+     A                                      DSPATR(PC)
+     A  30                                  ERRMSG('Duplicate Instructor No' 30)
+     A  31                                  ERRMSG('Instructor not found' 31)
+        32                                  ERRMSG('Instructor not found' 32)
+     A                                 19  2'F3=Exit'
+     A                                  1 60DATE(*JOB)
+     A                                      EDTWRD('  /  /  ')
+     A                                  2 23'Instructor File Maintenance'
+     A                                  3 30'Jacob Anderson'
+     A                                  6 11'Action Code . . . . . . . . . .'
+     A            ACTION         1   I  6 43VALUES('A' 'C' 'D')
+     A  43                                  ERRMSG('Invalid Action')
+     A                                  8 18'A = add record'
+     A                                  9 18'C = change record'
+     A                                 10 18'D = delete record'
+     A          R SCRN2
+     A                                      CA12(12 'F12=Cancel')
+     A  42                                  CA10(10 'F10=Delete')
+     A                                  1 28'Wibaux University'
+     A                                  2 23'Instructor File Maintenance'
+     A                                  3 30'Jacob Anderson'
+     A                                  1 63DATE(*JOB)
+     A                                      EDTWRD('  /  /  ')
+     A                                  6 21'Social Security Number . .'
+     A                                  7 21'First Name . . . . . . . .'
+     A                                  8 21'Last Name  . . . . . . . .'
+     A                                  9 21'Department . . . . . . . .'
+     A                                 10 21'Salary . . . . . . . . . .'
+     A                                 11 21'Rank . . . . . . . . . . .'
+     A                                 12 21'Sex  . . . . . . . . . . .'
+     A                                 13 21'Date of Hire . . . . . . .'
+     A                                 14 21'Marital Status . . . . . .'
+     A                                 15 21'Number of Dependents . . .'
+     A                                 16 21'Tenured (Y/N)  . . . . . .'
+     A                                 17 21'Preferred Title  . . . . .'
+     A                                 19 13'When Finished, Press'
+     A                                 23  3'F3 = Exit, F12 = Cancel'
+     A            INSTNO    R        O  6 49
+     A            IFNAME    R   10   B  7 49
+     A  42                                  DSPATR(PR)
+     A            ILNAME    R   15   B  8 49
+     A  42                                  DSPATR(PR)
+     A            DEPT      R    3   B  9 49
+     A  42                                  DSPATR(PR)
+     A            TENURE    R    1   B 16 49VALUES('Y' 'N')
+     A  42                                  DSPATR(PR)
+     A            MARSTS    R    1   B 14 49VALUES('M' 'S')
+     A  42                                  DSPATR(PR)
+     A            RANK      R    1   B 11 49VALUES('1' '2' '3' '4')
+     A  42                                  DSPATR(PR)
+     A            MSG           15   O 19 35
+     A            SALARY         8N 2B 10 49
+     A  42                                  DSPATR(PR)
+     A            DATEIN          L  B 13 49DATFMT(*USA)
+     A  42                                  DSPATR(PR)
+     A            SEX            1   B 12 49VALUES('M' 'F')
+     A  42                                  DSPATR(PR)
+     A            DEPEND         2N 0B 15 49
+     A  42                                  DSPATR(PR)
+     A            TITLE          1   B 17 49
+     A  42                                  DSPATR(PR)
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="SCRN1">
+     A*%%RS+  <device type="display" width="80" height="24" />
+     A*%%RS+  <record-write record-format="SCRN1" />
+     A*%%RS+ </sequence>
+     A*%%RS+ <sequence name="SCRN2">
+     A*%%RS+  <device type="display" width="80" height="24" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>                       

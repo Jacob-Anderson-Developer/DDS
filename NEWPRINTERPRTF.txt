@@ -1,0 +1,41 @@
+     A* EXTERNAL PRINTER FILE DEFINITION FOR PROFIT REPORT
+     A          R HEADING                   SKIPB(1)
+     A                                     1DATE(*JOB *YY)
+     A                                      EDTCDE(Y)
+     A                                    23'COMPUSELL PROFITS'
+     A                                    52'PAGE '
+     A                                    57PAGNBR
+     A                                      EDTCDE(Z)
+     A                                      SPACEA(2)
+     A                                     1'PRODUCT'
+     A                                    36'SELLING'
+     A                                    46'CURRENT'
+     A                                    58'NET'
+     A                                       SPACEA(1)
+     A                                     1'NUMBER'
+     A                                     9'DESCRIPTION'
+     A                                    37'PRICE'
+                                          47'COST'
+     A                                    57'PROFIT'
+     A                                      SPACEA(1)
+     A          R DETAIL                    SPACEA(1)
+     A            PRODNO    R              1REFFLD(INVREC/PRODNO RPGIV_5THS/CSI-
+                                            NVP)
+     A            DESCRP    R              9REFFLD(INVREC/DESCRP RPGIV_5THS/CSI-
+                                            NVP)
+                                            SPACEA(1)
+     A            SELLPR    R             36REFFLD(INVREC/SELLPR RPGIV_5THS/CSI-
+                                            NVP)
+                                            SPACEA(1)
+                                            EDTCDE(1 $)
+     A            CURCST    R             46REFFLD(INVREC/CURCST RPGIV_5THS/CSI-
+                                            NVP)
+     A            PROFIT         6  2     55EDTCDE(1 $)
+     A          R TOTAL                     SPACEB(1)
+     A                                    46'TOTAL'
+     A            TOTALPROF      6  2     54EDTCDE(1 $)
+
+
+
+
+                                                                       

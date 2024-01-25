@@ -1,0 +1,31 @@
+     A* CLOUDSERVICES INVENTORY REPORT EXTERNAL PRINTER DEFINITION
+     A                                      INDARA
+     A          R HEADINGS
+     A                                     1DATE(*SYS *YY)
+     A                                      EDTCDE(Y)
+     A                                      EDTWRD('  /  /  ')
+     A                                    20'GTC CUSTOMER ACCOUNTS'
+     A                                    52'Page'
+     A                                    57PAGNBR
+     A                                      SPACEA(2)
+     A                                     3'CUSTOMER'
+                                          16'CUSTOMER LAST'
+                                          35'CURRENT BILL'
+                                          53'AMOUNT'
+                                            SPACEA(1)
+                                           4'PHONE'
+                                          20'NAME'
+                                          38'AMOUNT'
+                                          54'OWED'
+                                            SPACEA(2)
+     A          R DETAIL                    SPACEA(1)
+     A            CPHONE    R              6REFFLD(GTCSTP/CPHONE RPGIV_5THS/CSI-
+     A                                      NVP)
+     A            CLNAME    R             16REFFLD(GTCSTP/CLNAME RPGIV_5THS/CSI-
+     A                                      NVP)
+     A            CURBIL    R             35REFFLD(GTCSTP/CURBIL RPGIV_5THS/CSI-
+     A                                      NVP)
+                                            EDTCDE(J)
+     A            AMTOWE    R             53REFFLD(GTCSTP/AMTOWE RPGIV_THS/CSIN-
+     A                                      NVP)
+                                            EDTCDE(J $)              

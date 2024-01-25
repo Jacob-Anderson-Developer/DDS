@@ -1,0 +1,44 @@
+
+     A                                      REF(GTCPAYP)
+                                            INDARA
+     A          R HEADINGS                  SKIPB(1)
+     A                                     2DATE(*JOB *YY)
+     A                                      EDTCDE(Y)
+     A                                    53'GTC Telephone Company'
+     A                                   114'Page'
+     A                                   119PAGNBR
+                                            EDTCDE(Z)
+     A                                    42'Payment Processing Transaction Aud-
+     A                                      it Report'
+     A                                      SPACEB(1)
+     A                                    19'Customer'
+     A                                      SPACEB(2)
+     A                                    35'Date Received'
+     A                                    63'Amount'
+     A          R DETAIL                    SPACEA(1)
+     A            FNAME          1        14SPACEB(1)
+     A            CNAME         15        16
+     A            DATRCVL   R             36REFFLD(PAYREC/DATRCVL RPGIV_5THS/GT-
+     A                                      CPAYP)
+     A            BALANCE   R             61REFFLD(PAYREC/AMTPD RPGIV_5THS/GTCP-
+     A                                      AYP)
+     A                                      EDTCDE(A $)
+     A          R ERROR                     SPACEA(1)
+     A                                      SPACEB(2)
+     A            MSG           43        72
+     A            MSG1          43        72SPACEB(1)
+     A
+     A          R TOTAL
+     A                                  8 66'*** Customers not found in Master -
+     A                                      file ***'
+     A            NOCUST         3  0   8 54
+
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="S2PRJ2">
+     A*%%RS+  <device type="printer" width="132" height="66" />
+     A*%%RS+  <record-write record-format="HEADINGS" />
+     A*%%RS+  <record-write record-format="ERROR" />
+     A*%%RS+  <record-write record-format="DETAIL" />
+     A*%%RS+  <record-write record-format="TOTAL" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>                                                                                                         

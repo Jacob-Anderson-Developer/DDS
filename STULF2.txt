@@ -1,0 +1,6 @@
+     A          R STUPFR                    PFILE(STUPF)
+     A            LNAME
+     A            FNAME
+     A            ZIP
+     A          K LNAME
+     A          S ZIP                       RANGE(52000 52999)                   

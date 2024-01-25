@@ -1,0 +1,54 @@
+     A*%%TS  DD  20070830  084412  anders_c    REL-V5.0.1  WDSc
+     A*%%PR 1066132I
+     A*%%EC
+     A
+     A          R HEADING
+     A*%%TS  DD  20070722  141614  Loki        REL-V5.0.1  WDSc
+     A*%%RI 00000
+     A                                     5DATE(*SYS)
+     A                                      EDTCDE(Y)
+     A                                      SPACEB(1)
+     A                                    38'WIBAUX University Current Sections-
+     A                                       File'
+     A                                    94'Page'
+     A                                   102PAGNBR
+     A                                     4'Section'
+     A                                      SPACEB(2)
+     A                                    14'Dept.'
+     A                                    25'Crs'
+     A                                    34'Title'
+     A                                    65'Credit'
+     A                                    77'Time'
+     A                                    88'Meeting Days'
+     A                                   102'Room'
+     A          R DETAIL
+     A*%%TS  DD  20070830  084412  anders_c    REL-V5.0.1  WDSc
+     A*%%RI 00001
+     A                                      SPACEB(1)
+     A            SECTION   R              5
+     A                                      REFFLD(SECREC/SECTION RPGIV_5THS/WU-
+     A                                      SCTP)
+     A            DEPT      R             15REFFLD(SECREC/DEPT RPGIV_5THS/WUSCT-
+     A                                      P)
+     A            CRSNO     R             25REFFLD(SECREC/CRSNO RPGIV_5THS/WUSC-
+     A                                      TP)
+     A            CRSTTL    R             34REFFLD(CRSREC/CRSTTL RPGIV_5THS/WUC-
+     A                                      RSP)
+     A            CREDIT    R             67REFFLD(CRSREC/CREDIT RPGIV_5THS/WUC-
+     A                                      RSP)
+     A            SECTIM    R             77REFFLD(SECREC/SECTIM RPGIV_5THS/WUS-
+     A                                      CTP)
+     A            SECDAY    R             90REFFLD(SECREC/SECDAY RPGIV_5THS/WUS-
+     A                                      CTP)
+     A            ROOM      R            102REFFLD(SECREC/ROOM RPGIV_5THS/WUSCT-
+     A                                      P)
+     A*%%TS  DD  20070830  084412  anders_c    REL-V5.0.1  WDSc
+     A*%%RI 00000
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="Untitled">
+     A*%%RS+  <device type="printer" width="132" height="66" />
+     A*%%RS+  <record-write record-format="HEADING" />
+     A*%%RS+  <record-write record-format="DETAIL" />
+     A*%%RS+  <record-write record-format="ERROR" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>      

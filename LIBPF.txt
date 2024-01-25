@@ -1,0 +1,13 @@
+     A                                      UNIQUE
+     A          R LIBPFR
+     A            CATNO         12S 0       COLHDG('CATALOG NUMBER')
+     A                                      CHECK(ME)
+     A            TITLE         35A         COLHDG('TITLE')
+     A            LNAME         20A         COLHDG('LAST NAME')
+     A            FNAME         15A         COLHDG('FIRST NAME')
+     A            MIDI           1A         COLHDG('MIDDLE INITIAL')
+     A            PUBLISH       40A         COLHDG('PUBLISHER')
+     A            DATE            L         COLHDG('DATE PUBLISHED')
+     A            PAGES          3S 0       COLHDG('PAGES')
+     A            COPIES         3S 0       COLHDG('COPIES AVAILABLE')
+     A          K CATNO                        
